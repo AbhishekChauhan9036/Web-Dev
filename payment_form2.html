@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="payment-endpoint-url" method="POST">
+      <header>
+        <h1>Payment Form</h1>
+      </header>
+
+      <section>
+        <h2>Contact Information</h2>
+        <p>
+          <label for="name">Name:*</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </p>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            <label for="male">Male*</label>
+            <input type="radio" name="gender" id="male" value="male" required />
+            <label for="female">Female*</label>
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+              required
+            />
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="address">Address:*</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="100"
+            rows="8"
+            placeholder="Enter your address"
+            required
+          ></textarea>
+        </p>
+
+        <p>
+          <label for="email">Email:*</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="pincode">Pincode:*</label>
+          <input
+            type="text"
+            name="pincode"
+            id="pincode"
+            pattern="\d{6}"
+            placeholder="Enter 6-digit pincode"
+            maxlength="6"
+            required
+          />
+        </p>
+      </section>
+
+      <section>
+        <h2>Payment Information</h2>
+        <p>
+          <label for="card_type">Card Type:*</label>
+          <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Mastercard</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="card_number">Card Number:*</label>
+          <input
+            type="text"
+            name="card_number"
+            id="card_number"
+            pattern="\d{16}"
+            placeholder="Enter 16-digit card number"
+            maxlength="16"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="exp_date">Expiration Date:*</label>
+          <input
+            type="date"
+            name="exp_date"
+            id="exp_date"
+            min="2025-01-01"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="cvv">CVV:*</label>
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            pattern="\d{3,4}"
+            placeholder="Enter 3 or 4-digit CVV"
+            maxlength="4"
+            required
+          />
+        </p>
+        <input type="submit" value="Pay Now" />
+      </section>
+    </form>
+  </body>
+</html>

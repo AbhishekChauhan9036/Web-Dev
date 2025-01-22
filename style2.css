@@ -1,0 +1,97 @@
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f9;
+      }
+
+      form {
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+          text-align: center;
+          color: #333;
+      }
+
+      p,
+      fieldset {
+          margin-bottom: 1.5rem;
+      }
+
+      fieldset {
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          padding: 1rem;
+      }
+
+      legend {
+          font-weight: bold;
+      }
+
+      label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #555;
+      }
+
+      input,
+      textarea,
+      select {
+          width: 100%;
+          padding: 0.8rem;
+          margin-top: 0.2rem;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          box-sizing: border-box;
+          font-size: 1rem;
+      }
+
+      input[type="radio"] {
+          width: auto;
+          margin: 0 0.5rem 0 0;
+      }
+
+      textarea {
+          resize: none;
+      }
+
+      input[type="submit"] {
+          background: #007bff;
+          color: #fff;
+          border: none;
+          padding: 0.8rem 1.5rem;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background 0.3s;
+      }
+
+      input[type="submit"]:hover {
+          background: #0056b3;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+          form {
+              padding: 1rem;
+          }
+
+          input,
+          textarea,
+          select {
+              font-size: 0.9rem;
+          }
+
+          h1,
+          h2 {
+              font-size: 1.5rem;
+          }
+      }

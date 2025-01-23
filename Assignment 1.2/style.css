@@ -1,0 +1,17 @@
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.blog-post {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .blog-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}

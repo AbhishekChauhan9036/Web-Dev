@@ -1,0 +1,38 @@
+@media screen and (width: 600px) {
+  body {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    color: red;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
+}
+
+/* and Operator */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  body {
+    color: aqua;
+  }
+}
+
+/* Or Operator  */
+@media screen and (max-width: 600px), screen and (orientation: landscape) {
+  body {
+    color: brown;
+  }
+}
+
+/* not Operator */
+@media not all and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+}
